@@ -23,6 +23,7 @@ import Reportss from "../../new/cocreater/components/reports";
 import Active from "../../new/cocreater/components/active";
 import MyQueue from "../../new/cocreater/components/myQueue";
 import CreatorReview from "../../new/cocreater/components/creatorReview";
+import Completed from "../../new/cocreater/components/completed";
 import Deferrals from "../../new/cocreater/components/deferrals";
 
 // ----------------------- Sidebar -----------------------
@@ -207,6 +208,8 @@ const MainLayout = () => {
         return <Active />;
       case "report":
         return <Reportss />;
+         case "completed":
+        return <Completed />;
       case "deferrals":
         return <Deferrals />;
       default:
